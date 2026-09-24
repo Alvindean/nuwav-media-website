@@ -1,0 +1,30 @@
+{
+  "event-cleanup": {
+    "name": "Event Cleanup & Setup",
+    "title": "Event Cleanup & Setup Services",
+    "metaDescription": "Event setup and cleanup for weddings, parties, quinceañeras and Bar and Bat Mitzvahs, plus housekeeping, from Linda D. Ray: over 25 years of hands-on experience.",
+    "lead": "You plan the celebration. We handle the work around it: tables set before guests arrive, and the room left clean after they go.",
+    "whatWeDo": [
+      "Service With A Smile sets up and cleans up family events: weddings, birthday and anniversary parties, reunions, quinceañeras, and Bar and Bat Mitzvahs. We also keep homes in order with regular housekeeping and in-home support.",
+      "Owner Linda D. Ray has done this work for more than 25 years. She plans each job with you herself and is there to make sure it gets done the way you agreed."
+    ],
+    "whoWeHelp": [
+      { "h": "Families hosting at home", "p": "Backyard parties and holiday gatherings, where the cleanup lands on whoever is hosting." },
+      { "h": "Couples and their parents", "p": "Weddings and receptions where the venue expects the room back clean by a set time." },
+      { "h": "Hosts of milestone celebrations", "p": "Quinceañeras and Bar and Bat Mitzvahs, where the family would rather be with their guests than in the kitchen." },
+      { "h": "People who need a hand at home", "p": "Seniors, busy parents and anyone recovering or short on time who wants the house kept up." }
+    ],
+    "whyTrusted": [
+      "More than 25 years doing this work",
+      "Owner-led: you deal with Linda from the first call to the last walkthrough",
+      "Based in Oak Park, Sacramento, and knows local homes and halls",
+      "Straight answers on what's included, with no pressure to book"
+    ]
+  },
+  "housekeeping": { "name": "Housekeeping", "blurb": "Regular or one-time cleaning that keeps your home fresh and livable." },
+  "wedding-cleanup": { "name": "Wedding Setup & Cleanup", "blurb": "Tables, décor and a clean room returned to the venue on time." },
+  "quinceanera-cleanup": { "name": "Quinceañera Setup & Cleanup", "blurb": "Help getting the hall ready and put back after the celebration." },
+  "mitzvah-cleanup": { "name": "Bar & Bat Mitzvah Setup & Cleanup", "blurb": "Careful, respectful support for these family milestones." },
+  "party-cleanup": { "name": "Party Setup & Cleanup", "blurb": "Birthdays, anniversaries, reunions and holiday gatherings." },
+  "in-home-support": { "name": "In-Home Support", "blurb": "A dependable extra hand around the house for seniors and busy families." }
+}

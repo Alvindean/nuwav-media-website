@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://service-with-a-smile.thealvindean.workers.dev/sitemap.xml

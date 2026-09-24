@@ -1,0 +1,35 @@
+{
+  "slug": "sacramento",
+  "name": "Sacramento",
+  "county": "Sacramento County",
+  "status": "live",
+  "map": "Oak Park, Sacramento, CA 95817",
+  "metaDescription": "Event setup and cleanup in Sacramento, CA, for weddings, parties, quinceañeras and Bar and Bat Mitzvahs. Owner-led and based in Oak Park. Call (916) 866-2270.",
+  "sub": "Based in Oak Park and serving neighborhoods across Sacramento. Linda sets up before your guests arrive and leaves the room clean after they go, so you can enjoy the day.",
+  "localContext": [
+    "Sacramento is home. Linda lives and works in Oak Park, just south of downtown and east of Highway 99, so most jobs in the city are a short drive from her own front door.",
+    "Many Sacramento celebrations happen in backyards, parish halls and neighborhood community rooms rather than full-service venues. Places like that usually give you the room and leave the rest to you: setting up tables, keeping the kitchen under control and returning the space clean by closing time."
+  ],
+  "localProblems": [
+    { "h": "Summer heat", "p": "July and August afternoons often reach 100°F. Food trays, trash and drinks need tighter handling, and setup works best early in the day. We plan around it so your backyard party stays pleasant and the cleanup doesn't turn into a mess." },
+    { "h": "Tight venue exit times", "p": "Church and community halls around the city often set a strict time to be out, with a cleaning checklist attached to your deposit. We work from that checklist so the room is handed back the way the venue expects." },
+    { "h": "Older homes, smaller kitchens", "p": "Neighborhoods like Oak Park, Curtis Park, Land Park and East Sacramento have many older homes with compact kitchens. Hosting a crowd there takes planning: where the dishes go, where the trash goes, and how to keep the kitchen usable while people are eating." }
+  ],
+  "scenarios": [
+    { "h": "A backyard graduation party in Oak Park", "p": "We set up tables and a serving area in the morning, keep the trash and buffet in order during the party, then break everything down and leave the yard and kitchen clean." },
+    { "h": "A quinceañera in a parish hall", "p": "Quinceañeras are a big part of celebration life in Sacramento. We help get the hall ready before the family arrives and put it back after, so parents and padrinos can stay with their guests." },
+    { "h": "A wedding reception with a hard midnight exit", "p": "Once the last dance ends, the clock is running. We clear tables, bag trash and reset the room so the couple's family isn't stacking chairs at 11:45." },
+    { "h": "Ongoing housekeeping for an older parent", "p": "Families across the city ask for regular help keeping a parent's home clean and manageable. Linda handles this personally and keeps a steady, familiar routine." }
+  ],
+  "demand": "Most Sacramento event requests come in for spring and fall weekends, when weddings and quinceañeras cluster, and in the weeks before the winter holidays. If your date falls in those windows, calling early gives you the best chance of getting it.",
+  "neighborhoods": ["Oak Park", "Curtis Park", "Land Park", "Tahoe Park", "East Sacramento", "Midtown", "Downtown", "Elmhurst", "South Sacramento", "Pocket", "Natomas", "Del Paso Heights"],
+  "faqs": [
+    { "q": "How much does event cleanup cost in Sacramento?", "a": "It depends on the guest count, the venue, how many hours you need and whether you want setup, cleanup or both. Linda doesn't quote from a list. Call (916) 866-2270, tell her about your event, and she'll give you a clear price before anything is booked." },
+    { "q": "How far ahead should I book?", "a": "For spring and fall weekends and the holiday season, the earlier the better. For smaller parties and housekeeping, Linda can often fit you in sooner. Call and ask about your date." },
+    { "q": "Do you work at venues or only at homes?", "a": "Both. We work in private homes and backyards, church and parish halls, community rooms and other event spaces around Sacramento. If your venue has its own cleaning rules, share them and we'll follow them." },
+    { "q": "Which parts of Sacramento do you serve?", "a": "We're based in Oak Park and work across the city, including Curtis Park, Land Park, East Sacramento, Midtown, South Sacramento, the Pocket and Natomas. If you're not sure your area is covered, just call." },
+    { "q": "Do you bring cleaning supplies?", "a": "Tell Linda what the venue provides and what you need when you call. She'll tell you exactly what she brings and what, if anything, she'll need from you, so there are no surprises on the day." },
+    { "q": "Is it the same person every time?", "a": "Yes. Linda D. Ray owns the business, plans each job with you and is there to make sure it's done right." }
+  ],
+  "nearby": ["west-sacramento", "elk-grove", "rancho-cordova"]
+}

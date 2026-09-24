@@ -2,3 +2,5 @@ wrangler.jsonc
 README.md
 .assetsignore
 .wrangler
+generator
+.generated.json

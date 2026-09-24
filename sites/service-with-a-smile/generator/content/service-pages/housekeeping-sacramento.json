@@ -1,0 +1,30 @@
+{
+  "service": "housekeeping",
+  "city": "sacramento",
+  "status": "live",
+  "h1": "Housekeeping in Sacramento, CA",
+  "metaDescription": "Dependable, owner-led housekeeping in Sacramento, CA, from Linda D. Ray: one-time or regular cleaning, plus in-home support for older adults. Call (916) 866-2270.",
+  "sub": "The same trusted person every visit. Linda keeps Sacramento homes clean and manageable, whether it's one deep clean or a regular routine.",
+  "intro": [
+    "Housekeeping is where Service With A Smile started, and it's still the everyday heart of the business. Linda cleans homes across Sacramento, many of them older houses in Oak Park, Curtis Park and Land Park, where hardwood, original tile and small kitchens call for a careful hand.",
+    "Some clients want a one-time reset before guests or after a busy season. Others want a steady schedule. A growing number are families arranging help for an older parent who wants to stay in their own home."
+  ],
+  "included": [
+    "Kitchens: counters, sinks, stovetop, appliance fronts",
+    "Bathrooms: tubs, showers, toilets, sinks and mirrors",
+    "Dusting, vacuuming and mopping throughout",
+    "Beds made and linens changed on request",
+    "Trash and recycling taken out",
+    "Anything else, agreed with Linda before the first visit"
+  ],
+  "scenarios": [
+    { "h": "Keeping up an older parent's home", "p": "Adult children often call on a parent's behalf. Linda keeps a familiar routine, works at a respectful pace, and keeps the family informed if they'd like." },
+    { "h": "Before the relatives arrive", "p": "A thorough one-time clean before a holiday or family visit, so you can focus on cooking and hosting." },
+    { "h": "After hosting a party", "p": "Pairs naturally with event cleanup. We reset the house the day after, even if we didn't work the party." }
+  ],
+  "faqs": [
+    { "q": "How much does housekeeping cost in Sacramento?", "a": "It depends on the size of the home, its condition and how often you'd like visits. Call (916) 866-2270 and Linda will give you a clear price before the first visit." },
+    { "q": "Will the same person clean my home each time?", "a": "Yes. Linda D. Ray owns the business and does the work herself, so you're not getting a different stranger every visit." },
+    { "q": "Can you help an older relative who lives alone?", "a": "Yes. In-home support for seniors is a big part of what we do. Call to talk through what your family member needs." }
+  ]
+}

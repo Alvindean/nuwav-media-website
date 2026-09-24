@@ -1,0 +1,88 @@
+{
+  "slug": "west-sacramento",
+  "name": "West Sacramento",
+  "county": "Yolo County",
+  "status": "draft",
+  "draftNote": "Confirm with Linda that she serves West Sacramento before setting status to live.",
+  "map": "West Sacramento, CA",
+  "metaDescription": "Event setup and cleanup in West Sacramento, CA, for riverfront gatherings, weddings, quinceañeras and family parties, plus housekeeping. Call (916) 866-2270.",
+  "sub": "Just across the river from our Oak Park base. Linda handles setup and cleanup so West Sacramento hosts can stay with their guests.",
+  "localContext": [
+    "West Sacramento sits across the Sacramento River from downtown, in Yolo County rather than Sacramento County. It's a short drive over the bridges from Oak Park, which makes it one of the easiest places outside the city for us to reach.",
+    "The city mixes established neighborhoods like Broderick and Bryte with newer areas like Southport and the riverfront. Celebrations here often happen in homes and community spaces, and sometimes outdoors near the water.",
+    "Because it's so close, West Sacramento hosts get the same planning and the same person as our Sacramento clients: Linda plans the job, shows up and does the work."
+  ],
+  "localProblems": [
+    {
+      "h": "Outdoor events near the river",
+      "p": "Wind, heat and bugs by the water make outdoor setups harder. Tablecloths blow, trash attracts yellowjackets and food needs covering. We set up with that in mind and keep things cleared as the event goes."
+    },
+    {
+      "h": "Different city, different rules",
+      "p": "West Sacramento has its own city services and trash pickup, separate from Sacramento's. We make sure trash and recycling are left the way your home or venue needs them."
+    },
+    {
+      "h": "Mixed older and newer homes",
+      "p": "An older Broderick bungalow and a new Southport house call for different setups. We plan the layout around your actual space."
+    },
+    {
+      "h": "Smaller community rooms",
+      "p": "Clubhouse and community rooms in West Sacramento's newer neighborhoods are often compact, with a small kitchen and strict rules. Tight spaces mean setup has to be planned around the layout, and cleanup has to be thorough to get the deposit back."
+    }
+  ],
+  "scenarios": [
+    {
+      "h": "A family reunion in Southport",
+      "p": "We set up tables and a shaded serving area, keep trash under control through the afternoon, and reset the house and yard at the end."
+    },
+    {
+      "h": "A small wedding reception",
+      "p": "For couples using a community room or a family property, we handle the setup and breakdown so the wedding party can relax."
+    },
+    {
+      "h": "Move-out or move-in cleaning",
+      "p": "With newer housing still being built, we help with cleaning when people move in or out."
+    },
+    {
+      "h": "A backyard birthday in Broderick",
+      "p": "Older lots with mature trees are great for parties but hard on cleanup. We handle leaf-strewn tables, the trash and the kitchen afterward."
+    }
+  ],
+  "demand": "In West Sacramento, requests are steady through spring and summer, when outdoor gatherings are most popular.",
+  "neighborhoods": [
+    "Southport",
+    "Broderick",
+    "Bryte",
+    "The Rivers",
+    "Bridge District"
+  ],
+  "faqs": [
+    {
+      "q": "How much does event cleanup cost in West Sacramento?",
+      "a": "It depends on the size of the event, the venue and the hours you need. Call (916) 866-2270 for a clear quote before you book."
+    },
+    {
+      "q": "You're in Sacramento. Do you really come across the river?",
+      "a": "Yes. West Sacramento is just over the bridges from our Oak Park base. Call to check your date."
+    },
+    {
+      "q": "Can you handle an outdoor event?",
+      "a": "Yes. We plan for wind, sun and trash control so the event runs smoothly and the cleanup is quick."
+    },
+    {
+      "q": "Do you serve Southport and the Bridge District?",
+      "a": "Those are part of West Sacramento, so yes, subject to your date. Call to confirm."
+    },
+    {
+      "q": "Can you set up before we arrive?",
+      "a": "Yes. Many hosts want the tables, serving area and trash stations ready before guests show up. Tell Linda your timing and she'll plan around it."
+    },
+    {
+      "q": "Is West Sacramento treated differently from Sacramento?",
+      "a": "Not for booking. It's just a different city and county. Pricing depends on the event, not which side of the river you're on."
+    }
+  ],
+  "nearby": [
+    "sacramento"
+  ]
+}

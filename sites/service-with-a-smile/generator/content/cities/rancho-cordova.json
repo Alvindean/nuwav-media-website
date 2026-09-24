@@ -1,0 +1,89 @@
+{
+  "slug": "rancho-cordova",
+  "name": "Rancho Cordova",
+  "county": "Sacramento County",
+  "status": "draft",
+  "draftNote": "Confirm with Linda that she serves Rancho Cordova before setting status to live.",
+  "map": "Rancho Cordova, CA",
+  "metaDescription": "Party and event setup and cleanup in Rancho Cordova, CA, plus housekeeping and in-home support. Owner-led, 25+ years of experience. Call (916) 866-2270.",
+  "sub": "East along Highway 50, with the same owner-led service. Linda sets up before your event and cleans up after, and keeps homes in order between them.",
+  "localContext": [
+    "Rancho Cordova became a city in 2003 and sits east of Sacramento along US-50, about 20 minutes from our base in Oak Park. It mixes long-settled neighborhoods with newer developments to the south and east, and is home to many military and working families, a legacy of the old Mather Air Force Base.",
+    "That mix means a lot of household help as well as parties: busy families who want the house kept up, and relatives who want help for an older parent.",
+    "Rancho Cordova's newer neighborhoods to the south and east, like Anatolia and Sunridge, have clubhouse rooms and parks that host a lot of family events. The older areas near Folsom Boulevard tend toward home-hosted gatherings."
+  ],
+  "localProblems": [
+    {
+      "h": "Busy, shift-working households",
+      "p": "Many Rancho Cordova families work long or irregular hours. Regular housekeeping lifts a weekly job off their list."
+    },
+    {
+      "h": "Community hall rentals",
+      "p": "Parties held in rented community and clubhouse rooms usually come with a cleaning checklist and a deposit on the line. We work from that checklist."
+    },
+    {
+      "h": "Heat on the east side",
+      "p": "Summer afternoons here run hot. We set up outdoor events early and keep food and trash areas under control."
+    },
+    {
+      "h": "Keeping a home up alongside a busy schedule",
+      "p": "Between work and family, the house often slips until guests are coming. A regular housekeeping routine means you're never starting from scratch before a party."
+    }
+  ],
+  "scenarios": [
+    {
+      "h": "Regular housekeeping for a working family",
+      "p": "A steady schedule, handled by the same person every time, keeps the house in shape without taking up the weekend."
+    },
+    {
+      "h": "A birthday party at a rented clubhouse",
+      "p": "We set up before guests arrive and hand the room back clean, following the venue's own list."
+    },
+    {
+      "h": "In-home support for an older relative",
+      "p": "Help keeping the home clean and manageable, with the familiar routine older adults tend to prefer."
+    },
+    {
+      "h": "Holiday hosting at home",
+      "p": "We help get the house ready before relatives arrive, then reset it afterward, so the host gets to enjoy the holiday too."
+    }
+  ],
+  "demand": "In Rancho Cordova, housekeeping and in-home support requests come in year-round, and party requests rise in summer and at the holidays.",
+  "neighborhoods": [
+    "Cordova Meadows",
+    "Anatolia",
+    "Capital Village",
+    "Sunridge",
+    "Mather"
+  ],
+  "faqs": [
+    {
+      "q": "How much does housekeeping cost in Rancho Cordova?",
+      "a": "It depends on the size of the home and how often you'd like help. Call (916) 866-2270 and Linda will give you a clear price."
+    },
+    {
+      "q": "Do you travel to Rancho Cordova?",
+      "a": "It's about 20 minutes from Oak Park along Highway 50. Call to check availability."
+    },
+    {
+      "q": "Can I set up a regular schedule?",
+      "a": "Yes. Weekly or every-other-week visits can be arranged. Talk it through with Linda on the phone."
+    },
+    {
+      "q": "Do you also do party setup and cleanup in Rancho Cordova?",
+      "a": "Yes. Birthdays, graduations, reunions and holiday gatherings, at home or in a rented clubhouse or community room."
+    },
+    {
+      "q": "Can you help an older parent who lives in Rancho Cordova?",
+      "a": "Yes. In-home support for seniors is part of what we do: a familiar person keeping the home clean and manageable. Call to talk it through."
+    },
+    {
+      "q": "Is it the same person each visit?",
+      "a": "Yes. Linda D. Ray owns the business and does the work, so you get the same familiar face every time."
+    }
+  ],
+  "nearby": [
+    "sacramento",
+    "elk-grove"
+  ]
+}

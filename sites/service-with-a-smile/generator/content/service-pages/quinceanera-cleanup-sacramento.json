@@ -1,0 +1,32 @@
+{
+  "service": "quinceanera-cleanup",
+  "city": "sacramento",
+  "status": "live",
+  "h1": "Quinceañera Setup & Cleanup in Sacramento, CA",
+  "metaDescription": "Quinceañera hall setup and cleanup in Sacramento, CA, so the family can celebrate with their guests. Owner-led, 25+ years of experience. Call (916) 866-2270.",
+  "sub": "A quinceañera is a big day with a lot of moving parts. Linda handles the setup and cleanup so parents and padrinos can stay with their guests.",
+  "intro": [
+    "Quinceañeras are a big part of family life in Sacramento. They often mean a Mass, a reception in a parish or community hall, a long guest list, and a lot of relatives pitching in, and too often the parents end up working instead of celebrating.",
+    "Linda helps get the hall ready before the family arrives and puts it back in order at the end of the night, working to whatever the hall expects."
+  ],
+  "included": [
+    "Hall setup: tables, chairs and linens to your layout",
+    "Serving and dessert-table setup",
+    "Trash and plate clearing during the party (on request)",
+    "Full breakdown and décor removal",
+    "Kitchen and serving-area cleanup",
+    "Following the hall's cleaning rules and exit time"
+  ],
+  "scenarios": [
+    { "h": "A parish hall after evening Mass", "p": "We set the hall during the ceremony so guests walk into a finished room, then handle the late-night cleanup." },
+    { "h": "A backyard celebration", "p": "For families hosting at home, we set up the yard and reset the house and yard afterward." },
+    { "h": "Helping the court of honor stay focused", "p": "With setup and cleanup handled, the damas, chambelanes and family can focus on the dances and the guests." }
+  ],
+  "faqs": [
+    { "q": "How much does quinceañera cleanup cost in Sacramento?", "a": "It depends on the guest count, the hall and the hours you need. Call (916) 866-2270 for a clear quote before booking." },
+    { "q": "When should we book?", "a": "As soon as you have your hall and date. Spring and fall weekends are the busiest." },
+    { "q": "Can you work with the hall's rules?", "a": "Yes. Share the hall's checklist and exit time, and we'll plan around it." },
+    { "q": "Can you work alongside our caterer or family cooks?", "a": "Yes. Many families cook for their own quinceañera or bring in a caterer. We stay out of the way of the food and keep serving tables, trash and the kitchen under control so the cooks can focus." },
+    { "q": "Do you help with the church ceremony?", "a": "We focus on the reception space, whether that's a hall, a community room or your home. Most families use the time during Mass for us to finish setting up, so the room is ready when guests arrive." }
+  ]
+}
