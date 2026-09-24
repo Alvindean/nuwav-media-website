@@ -1,0 +1,9 @@
+{
+  // Cloudflare Worker "service-with-a-smile": serves the client site folder as
+  // static assets. The NuWav site itself is deployed by Cloudflare Pages.
+  "name": "service-with-a-smile",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "sites/service-with-a-smile"
+  }
+}
