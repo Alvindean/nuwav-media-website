@@ -359,6 +359,89 @@ const NuWavMedia = () => {
                   <ul className="space-y-2 relative z-10">
                     <li className="flex items-center">
                       <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
+                      <span className="text-gray-700 dark:text-gray-200 font-medium">Virtual Property Tours</span>
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
+                      <span className="text-gray-700 dark:text-gray-200 font-medium">Lead Generation Systems</span>
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
+                      <span className="text-gray-700 dark:text-gray-200 font-medium">Luxury Brand Positioning</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className={`p-8 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl relative overflow-hidden border-2 ${darkMode ? 'bg-gray-900 border-purple-500/20 hover:border-purple-500/40' : 'bg-white shadow-lg border-purple-500/20 hover:border-purple-500/40'}`}>
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-400/30 to-indigo-500/30 rounded-full -translate-y-8 translate-x-8"></div>
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-indigo-500 rounded-full flex items-center justify-center mb-6 relative z-10 shadow-lg">
+                    <Users className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 relative z-10 text-gray-900 dark:text-white">Legal Firm Marketing</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-6 relative z-10 font-medium">
+                    Ethical marketing strategies for law firms, attorneys, and legal professionals to build trust and attract clients.
+                  </p>
+                  <ul className="space-y-2 relative z-10">
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
+                      <span className="text-gray-700 dark:text-gray-200 font-medium">Legal SEO Optimization</span>
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
+                      <span className="text-gray-700 dark:text-gray-200 font-medium">Reputation Management</span>
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
+                      <span className="text-gray-700 dark:text-gray-200 font-medium">Content Marketing</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className={`p-8 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl relative overflow-hidden border-2 ${darkMode ? 'bg-gray-900 border-green-500/20 hover:border-green-500/40' : 'bg-white shadow-lg border-emerald-500/20 hover:border-emerald-500/40'}`}>
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald-400/30 to-teal-500/30 rounded-full -translate-y-8 translate-x-8"></div>
+                  <div className="w-16 h-16 bg-gradient-to-r from-emerald-600 to-teal-500 rounded-full flex items-center justify-center mb-6 relative z-10 shadow-lg">
+                    <Headphones className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 relative z-10 text-gray-900 dark:text-white">Healthcare Marketing</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-6 relative z-10 font-medium">
+                    HIPAA-compliant marketing for medical practices, healthcare providers, and wellness brands.
+                  </p>
+                  <ul className="space-y-2 relative z-10">
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
+                      <span className="text-gray-700 dark:text-gray-200 font-medium">Patient Acquisition</span>
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
+                      <span className="text-gray-700 dark:text-gray-200 font-medium">Medical SEO</span>
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
+                      <span className="text-gray-700 dark:text-gray-200 font-medium">Telehealth Promotion</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className={`p-8 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl relative overflow-hidden border-2 ${darkMode ? 'bg-gray-900 border-rose-500/20 hover:border-rose-500/40' : 'bg-white shadow-lg border-rose-500/20 hover:border-rose-500/40'}`}>
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-rose-400/30 to-pink-500/30 rounded-full -translate-y-8 translate-x-8"></div>
+                  <div className="w-16 h-16 bg-gradient-to-r from-rose-600 to-pink-500 rounded-full flex items-center justify-center mb-6 relative z-10 shadow-lg">
+                    <Globe className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 relative z-10 text-gray-900 dark:text-white">Financial Services</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-6 relative z-10 font-medium">
+                    Compliant marketing for financial advisors, wealth management firms, and fintech companies.
+                  </p>
+                  <ul className="space-y-2 relative z-10">
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
+                      <span className="text-gray-700 dark:text-gray-200 font-medium">Wealth Management Marketing</span>
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
+                      <span className="text-gray-700 dark:text-gray-200 font-medium">Trust Building Content</span>
+                    </li>
+                    <li className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
                       <span className="text-gray-700 dark:text-gray-200 font-medium">Regulatory Compliance</span>
                     </li>
                   </ul>
@@ -812,87 +895,4 @@ const NuWavMedia = () => {
   );
 };
 
-export default NuWavMedia; text-emerald-500 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-200 font-medium">Virtual Property Tours</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-200 font-medium">Lead Generation Systems</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-200 font-medium">Luxury Brand Positioning</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className={`p-8 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl relative overflow-hidden border-2 ${darkMode ? 'bg-gray-900 border-purple-500/20 hover:border-purple-500/40' : 'bg-white shadow-lg border-purple-500/20 hover:border-purple-500/40'}`}>
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-400/30 to-indigo-500/30 rounded-full -translate-y-8 translate-x-8"></div>
-                  <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-indigo-500 rounded-full flex items-center justify-center mb-6 relative z-10 shadow-lg">
-                    <Users className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4 relative z-10 text-gray-900 dark:text-white">Legal Firm Marketing</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-6 relative z-10 font-medium">
-                    Ethical marketing strategies for law firms, attorneys, and legal professionals to build trust and attract clients.
-                  </p>
-                  <ul className="space-y-2 relative z-10">
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-200 font-medium">Legal SEO Optimization</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-200 font-medium">Reputation Management</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-200 font-medium">Content Marketing</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className={`p-8 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl relative overflow-hidden border-2 ${darkMode ? 'bg-gray-900 border-green-500/20 hover:border-green-500/40' : 'bg-white shadow-lg border-emerald-500/20 hover:border-emerald-500/40'}`}>
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald-400/30 to-teal-500/30 rounded-full -translate-y-8 translate-x-8"></div>
-                  <div className="w-16 h-16 bg-gradient-to-r from-emerald-600 to-teal-500 rounded-full flex items-center justify-center mb-6 relative z-10 shadow-lg">
-                    <Headphones className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4 relative z-10 text-gray-900 dark:text-white">Healthcare Marketing</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-6 relative z-10 font-medium">
-                    HIPAA-compliant marketing for medical practices, healthcare providers, and wellness brands.
-                  </p>
-                  <ul className="space-y-2 relative z-10">
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-200 font-medium">Patient Acquisition</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-200 font-medium">Medical SEO</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-200 font-medium">Telehealth Promotion</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className={`p-8 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl relative overflow-hidden border-2 ${darkMode ? 'bg-gray-900 border-rose-500/20 hover:border-rose-500/40' : 'bg-white shadow-lg border-rose-500/20 hover:border-rose-500/40'}`}>
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-rose-400/30 to-pink-500/30 rounded-full -translate-y-8 translate-x-8"></div>
-                  <div className="w-16 h-16 bg-gradient-to-r from-rose-600 to-pink-500 rounded-full flex items-center justify-center mb-6 relative z-10 shadow-lg">
-                    <Globe className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4 relative z-10 text-gray-900 dark:text-white">Financial Services</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-6 relative z-10 font-medium">
-                    Compliant marketing for financial advisors, wealth management firms, and fintech companies.
-                  </p>
-                  <ul className="space-y-2 relative z-10">
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-200 font-medium">Wealth Management Marketing</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
-                      <span className="text-gray-700 dark:text-gray-200 font-medium">Trust Building Content</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="w-5 h-5
+export default NuWavMedia;
