@@ -9,10 +9,22 @@
       "Owner Linda D. Ray has done this work for more than 25 years. She plans each job with you herself and is there to make sure it gets done the way you agreed."
     ],
     "whoWeHelp": [
-      { "h": "Families hosting at home", "p": "Backyard parties and holiday gatherings, where the cleanup lands on whoever is hosting." },
-      { "h": "Couples and their parents", "p": "Weddings and receptions where the venue expects the room back clean by a set time." },
-      { "h": "Hosts of milestone celebrations", "p": "Quinceañeras and Bar and Bat Mitzvahs, where the family would rather be with their guests than in the kitchen." },
-      { "h": "People who need a hand at home", "p": "Seniors, busy parents and anyone recovering or short on time who wants the house kept up." }
+      {
+        "h": "Families hosting at home",
+        "p": "Backyard parties and holiday gatherings, where the cleanup lands on whoever is hosting."
+      },
+      {
+        "h": "Couples and their parents",
+        "p": "Weddings and receptions where the venue expects the room back clean by a set time."
+      },
+      {
+        "h": "Hosts of milestone celebrations",
+        "p": "Quinceañeras and Bar and Bat Mitzvahs, where the family would rather be with their guests than in the kitchen."
+      },
+      {
+        "h": "People who need a hand at home",
+        "p": "Seniors, busy parents and anyone recovering or short on time who wants the house kept up."
+      }
     ],
     "whyTrusted": [
       "More than 25 years doing this work",
@@ -21,10 +33,52 @@
       "Straight answers on what's included, with no pressure to book"
     ]
   },
-  "housekeeping": { "name": "Housekeeping", "blurb": "Regular or one-time cleaning that keeps your home fresh and livable." },
-  "wedding-cleanup": { "name": "Wedding Setup & Cleanup", "blurb": "Tables, décor and a clean room returned to the venue on time." },
-  "quinceanera-cleanup": { "name": "Quinceañera Setup & Cleanup", "blurb": "Help getting the hall ready and put back after the celebration." },
-  "mitzvah-cleanup": { "name": "Bar & Bat Mitzvah Setup & Cleanup", "blurb": "Careful, respectful support for these family milestones." },
-  "party-cleanup": { "name": "Party Setup & Cleanup", "blurb": "Birthdays, anniversaries, reunions and holiday gatherings." },
-  "in-home-support": { "name": "In-Home Support", "blurb": "A dependable extra hand around the house for seniors and busy families." }
+  "housekeeping": {
+    "name": "Housekeeping",
+    "blurb": "Regular or one-time cleaning that keeps your home fresh and livable.",
+    "image": {
+      "file": "housekeeping.jpg",
+      "alt": "A bright, clean kitchen in an older Sacramento-style bungalow"
+    }
+  },
+  "wedding-cleanup": {
+    "name": "Wedding Setup & Cleanup",
+    "blurb": "Tables, décor and a clean room returned to the venue on time.",
+    "image": {
+      "file": "wedding-cleanup.jpg",
+      "alt": "A wedding reception hall set with white linens and floral centerpieces"
+    }
+  },
+  "quinceanera-cleanup": {
+    "name": "Quinceañera Setup & Cleanup",
+    "blurb": "Help getting the hall ready and put back after the celebration.",
+    "image": {
+      "file": "quinceanera-cleanup.jpg",
+      "alt": "A hall decorated in pink and gold for a quinceañera"
+    }
+  },
+  "mitzvah-cleanup": {
+    "name": "Bar & Bat Mitzvah Setup & Cleanup",
+    "blurb": "Careful, respectful support for these family milestones.",
+    "image": {
+      "file": "mitzvah-cleanup.jpg",
+      "alt": "A social hall set in blue and white for a Bar or Bat Mitzvah reception"
+    }
+  },
+  "party-cleanup": {
+    "name": "Party Setup & Cleanup",
+    "blurb": "Birthdays, anniversaries, reunions and holiday gatherings.",
+    "image": {
+      "file": "party-cleanup.jpg",
+      "alt": "A backyard set up for a family birthday party with a buffet canopy"
+    }
+  },
+  "in-home-support": {
+    "name": "In-Home Support",
+    "blurb": "A dependable extra hand around the house for seniors and busy families.",
+    "image": {
+      "file": "in-home-support.jpg",
+      "alt": "A tidy, cozy living room with an armchair and folded laundry"
+    }
+  }
 }

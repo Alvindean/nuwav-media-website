@@ -56,6 +56,12 @@ const logo = '<svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient 
 const faqBlock = (faqs) => `<div class="faq">${faqs.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}</div>`;
 const mapEmbed = (q, name) => `<iframe class="map" title="Map of ${esc(name)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=${encodeURIComponent(q)}&amp;output=embed"></iframe>`;
 
+const imgFor = (key, cls = 'svc-photo', eager = false) => {
+  const im = services[key] && services[key].image;
+  if (!im || !fs.existsSync(path.join(SITE, 'assets/img', im.file))) return '';
+  return `<img class="${cls}" src="/assets/img/${im.file}" alt="${esc(im.alt)}" width="1200" height="800"${eager ? '' : ' loading="lazy"'} decoding="async">`;
+};
+
 const processSteps = (place) => [
   { h: 'Call Linda', p: `Tell her the date, the place in ${place} and roughly how many guests, or what your home needs. She answers her own phone.` },
   { h: 'Get a clear plan and price', p: 'Linda walks through what\'s included (setup, cleanup, dishes, trash, the venue\'s checklist) and gives you a price before anything is booked.' },
@@ -161,7 +167,6 @@ const stateCrumb = { name: ST.name, url: url.state() };
 // 1. Root authority page
 {
   const s = services[P.slug];
-  const secondary = cfg.SECONDARY_SERVICES.map((k) => services[k]);
   add({
     urlPath: url.root(), kind: 'root',
     title: `${s.title} | ${cfg.BUSINESS_NAME}`,
@@ -172,7 +177,12 @@ const stateCrumb = { name: ST.name, url: url.state() };
     schema: [serviceNode(s.name, { '@type': 'State', name: ST.name }, url.root())],
     body: `
 <section class="block" id="what"><div class="wrap"><p class="eyebrow">What we do</p><h2>Setup, cleanup and housekeeping, done by the owner</h2><div class="lead">${paras(s.whatWeDo)}</div>
-<div class="grid">${secondary.map((x) => `<div class="card"><h3>${esc(x.name)}</h3><p>${esc(x.blurb)}</p></div>`).join('')}</div></div></section>
+<div class="grid">${cfg.SECONDARY_SERVICES.map((k) => {
+  const x = services[k];
+  const sp = servicePages.find((p) => p.service === k && p.city === cfg.HOME_CITY);
+  const inner = `${imgFor(k, 'card-photo')}<h3>${esc(x.name)}${sp ? ' →' : ''}</h3><p>${esc(x.blurb)}</p>`;
+  return sp ? `<a class="card" href="${url.servicePage(sp)}">${inner}</a>` : `<div class="card">${inner}</div>`;
+}).join('')}</div></div></section>
 <section class="block alt" id="who"><div class="wrap"><p class="eyebrow">Who we help</p><h2>Who calls us</h2>${cards(s.whoWeHelp)}</div></section>
 <section class="block" id="why"><div class="wrap"><p class="eyebrow">Why families trust us</p><h2>Experience you can talk to</h2><ul class="checks">${s.whyTrusted.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>${ctaBand(cfg.ADDRESS.locality)}</div></section>
 <section class="block alt" id="areas"><div class="wrap"><p class="eyebrow">Service areas</p><h2>Where we work</h2><p class="lead">We serve the ${esc(ST.name)} communities below. Pick yours to see local details, common questions and how booking works there.</p>
@@ -216,7 +226,7 @@ for (const c of cities) {
     body: `
 <section class="block" id="local"><div class="wrap"><p class="eyebrow">${esc(c.name)}, ${esc(c.county)}</p><h2>Hosting in ${esc(c.name)}: what to plan for</h2><div class="lead">${paras(c.localContext)}</div>${cards(c.localProblems)}</div></section>
 <section class="block alt" id="help"><div class="wrap"><p class="eyebrow">Real jobs, real help</p><h2>How we help ${esc(c.name)} hosts</h2>${cards(c.scenarios)}<p class="lead" style="margin-top:1.4rem">${esc(c.demand)}</p>
-${localServices.length ? `<div class="grid">${localServices.map((sp) => `<a class="card" href="${url.servicePage(sp)}"><h3>${esc(services[sp.service].name)} in ${esc(c.name)} →</h3><p>${esc(services[sp.service].blurb)}</p></a>`).join('')}</div>` : ''}</div></section>
+${localServices.length ? `<div class="grid">${localServices.map((sp) => `<a class="card" href="${url.servicePage(sp)}">${imgFor(sp.service, 'card-photo')}<h3>${esc(services[sp.service].name)} in ${esc(c.name)} →</h3><p>${esc(services[sp.service].blurb)}</p></a>`).join('')}</div>` : ''}</div></section>
 <section class="block" id="process"><div class="wrap"><p class="eyebrow">How it works</p><h2>From first call to final walkthrough</h2>${processBlock(c.name)}${ctaBand(c.name)}</div></section>
 <section class="block alt" id="faq"><div class="wrap"><p class="eyebrow">Questions</p><h2>${esc(c.name)} FAQs</h2>${faqBlock(c.faqs)}</div></section>
 <section class="block" id="area"><div class="wrap"><p class="eyebrow">Service area</p><h2>Where we work in and around ${esc(c.name)}</h2><ul class="chips">${c.neighborhoods.map((n) => `<li>${esc(n)}</li>`).join('')}</ul>${mapEmbed(c.map, c.name)}
@@ -238,12 +248,13 @@ for (const sp of servicePages) {
     schema: [serviceNode(`${svc.name} in ${c.name}`, { '@type': 'City', name: `${c.name}, ${ST.abbr}` }, url.servicePage(sp)), faqNode(sp.faqs)],
     noindex: sp.status !== 'live' || c.status !== 'live',
     body: `
-<section class="block" id="about"><div class="wrap"><p class="eyebrow">${esc(svc.name)} · ${esc(c.name)}</p><h2>${esc(svc.name)} from someone who's done it for ${esc(cfg.YEARS_EXPERIENCE)} years</h2><div class="lead">${paras(sp.intro)}</div></div></section>
+<section class="block" id="about"><div class="wrap"><p class="eyebrow">${esc(svc.name)} · ${esc(c.name)}</p><h2>${esc(svc.name)} from someone who's done it for ${esc(cfg.YEARS_EXPERIENCE)} years</h2>${imgFor(sp.service)}<div class="lead">${paras(sp.intro)}</div></div></section>
 <section class="block alt" id="included"><div class="wrap"><p class="eyebrow">What's included</p><h2>What we can take off your plate</h2><ul class="checks">${sp.included.map((i) => `<li>${esc(i)}</li>`).join('')}</ul></div></section>
 <section class="block" id="examples"><div class="wrap"><p class="eyebrow">Examples</p><h2>Typical ${esc(svc.name.toLowerCase())} jobs in ${esc(c.name)}</h2>${cards(sp.scenarios)}</div></section>
 <section class="block alt" id="process"><div class="wrap"><p class="eyebrow">How it works</p><h2>Booking is one phone call</h2>${processBlock(c.name)}${ctaBand(c.name)}</div></section>
 <section class="block" id="faq"><div class="wrap"><p class="eyebrow">Questions</p><h2>${esc(svc.name)} FAQs</h2>${faqBlock(sp.faqs)}
-<p class="muted" style="margin-top:1.4rem">More about working in ${esc(c.name)}: <a href="${url.city(c)}">${esc(P.name)} in ${esc(c.name)}</a>.</p></div></section>`,
+<p class="muted" style="margin-top:1.4rem">More about working in ${esc(c.name)}: <a href="${url.city(c)}">${esc(P.name)} in ${esc(c.name)}</a>.</p></div></section>
+<section class="block alt" id="more"><div class="wrap"><p class="eyebrow">Other services</p><h2>More ways we help in ${esc(c.name)}</h2><div class="grid">${servicePages.filter((o) => o.city === c.slug && o !== sp).map((o) => `<a class="card" href="${url.servicePage(o)}">${imgFor(o.service, 'card-photo')}<h3>${esc(services[o.service].name)} →</h3><p>${esc(services[o.service].blurb)}</p></a>`).join('')}</div></div></section>`,
   });
 }
 

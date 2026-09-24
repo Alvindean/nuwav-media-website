@@ -182,6 +182,10 @@
     }
     .icon svg { width: 26px; height: 26px; }
     .service h3 { font-size: 1.25rem; margin-bottom: .4rem; }
+    .svc-link { color: inherit; text-decoration: none; }
+    .svc-link::after { content: " →"; color: var(--orchid); }
+    .svc-link::before { content: ""; position: absolute; inset: 0; }
+    .svc-link:hover { color: var(--orchid); }
     .service p { color: var(--ink-soft); font-size: .98rem; }
 
     /* About */
@@ -380,32 +384,32 @@
         <div class="services-grid">
           <article class="service">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5"/><path d="M9.5 21v-6h5v6"/></svg></div>
-            <h3>Housekeeping</h3>
+            <h3><a class="svc-link" href="/housekeeping-in-sacramento-ca/">Housekeeping</a></h3>
             <p>Dependable, detailed cleaning that keeps your home fresh, tidy and ready to live in.</p>
           </article>
           <article class="service">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6.5C19 16.65 12 21 12 21z"/></svg></div>
-            <h3>Weddings</h3>
+            <h3><a class="svc-link" href="/wedding-cleanup-in-sacramento-ca/">Weddings</a></h3>
             <p>Setup and cleanup for your big day, so you and your family can celebrate without the stress.</p>
           </article>
           <article class="service">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.8 11.3 2 22l10.7-3.8"/><path d="M4 3h.01M22 8h.01M15 2h.01M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98-.7.1-1.22.72-1.22 1.43V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2z"/></svg></div>
-            <h3>Party Setup &amp; Cleanup</h3>
+            <h3><a class="svc-link" href="/party-cleanup-in-sacramento-ca/">Party Setup &amp; Cleanup</a></h3>
             <p>Birthdays, anniversaries, reunions and more. We arrive early to set up and stay late to clean up.</p>
           </article>
           <article class="service">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 21 18H3z"/><path d="M12 22 3 6h18z"/></svg></div>
-            <h3>Bar &amp; Bat Mitzvahs</h3>
+            <h3><a class="svc-link" href="/mitzvah-cleanup-in-sacramento-ca/">Bar &amp; Bat Mitzvahs</a></h3>
             <p>Careful, respectful support for these milestone celebrations, from the first table to the last dish.</p>
           </article>
           <article class="service">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 8 4 10h12l4-10-6 4-4-8-4 8z"/><path d="M6 21h12"/></svg></div>
-            <h3>Quinceañeras</h3>
+            <h3><a class="svc-link" href="/quinceanera-cleanup-in-sacramento-ca/">Quinceañeras</a></h3>
             <p>Help setting up and cleaning up the venue so the quinceañera's day runs smoothly from start to finish.</p>
           </article>
           <article class="service">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 14h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"/><path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 15 6 6"/><path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12z"/></svg></div>
-            <h3>In-Home Support</h3>
+            <h3><a class="svc-link" href="/in-home-support-in-sacramento-ca/">In-Home Support</a></h3>
             <p>Friendly help around the house for seniors, busy families and anyone who could use an extra hand.</p>
           </article>
         </div>

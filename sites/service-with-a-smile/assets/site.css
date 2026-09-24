@@ -121,3 +121,7 @@ footer ul { list-style: none; display: grid; gap: .3rem; }
   .callbar .btn-light { border-color: var(--line); }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+/* Service photos */
+.svc-photo { width: 100%; max-width: 820px; aspect-ratio: 3/2; object-fit: cover; border-radius: var(--radius); margin: 1.2rem 0 1.4rem; box-shadow: var(--shadow); background: #eee; }
+.card-photo { width: calc(100% + 44px); max-width: none; margin: -22px -22px 14px; aspect-ratio: 3/2; object-fit: cover; background: #eee; }

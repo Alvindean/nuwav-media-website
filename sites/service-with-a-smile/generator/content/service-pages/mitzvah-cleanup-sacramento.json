@@ -1,0 +1,31 @@
+{
+  "service": "mitzvah-cleanup",
+  "city": "sacramento",
+  "status": "live",
+  "h1": "Bar & Bat Mitzvah Setup & Cleanup in Sacramento, CA",
+  "metaDescription": "Bar and Bat Mitzvah reception setup and cleanup in Sacramento, CA. Careful, respectful and owner-led, with 25+ years of experience. Call (916) 866-2270.",
+  "sub": "A Bar or Bat Mitzvah is a proud family milestone. Linda handles the setup and cleanup around the celebration so your family can stay with your guests.",
+  "intro": [
+    "Bar and Bat Mitzvah receptions in Sacramento are often held in a synagogue social hall, a rented event room or at home, and each comes with its own expectations. Social halls usually have firm rules about the kitchen, the room layout and how the space is left.",
+    "Linda has supported these celebrations for years. She works quietly and respectfully, follows the hall's guidance and your family's wishes, and makes sure the room is ready before guests arrive and put back properly after they leave."
+  ],
+  "included": [
+    "Setting tables, chairs and linens to your plan",
+    "Arranging the serving, dessert and candle-lighting tables",
+    "Clearing plates and trash during the reception (on request)",
+    "Full breakdown and décor removal",
+    "Kitchen and serving-area cleanup",
+    "Following the hall's rules, including any kitchen guidelines"
+  ],
+  "scenarios": [
+    { "h": "A reception in a synagogue social hall", "p": "We set up after the service while the family is with their guests, then clear and reset the hall to the congregation's standards." },
+    { "h": "A Kiddush lunch followed by an evening party", "p": "Two events in one day means a quick turnaround in between. We clear after the lunch and have the room ready again for the evening." },
+    { "h": "A celebration at home", "p": "For families hosting in their own home or backyard, we set up in the morning and leave the house and yard clean at the end of the day." }
+  ],
+  "faqs": [
+    { "q": "How much does Bar or Bat Mitzvah cleanup cost in Sacramento?", "a": "It depends on the guest count, the venue and the hours you need. Call (916) 866-2270 and Linda will give you a clear price before you book." },
+    { "q": "Will you follow the synagogue's kitchen and hall rules?", "a": "Yes. Share the hall's guidelines ahead of time, including any kitchen rules, and we'll follow them. If anything is unclear, we'll check with you or the hall contact first." },
+    { "q": "Can you work around the service schedule?", "a": "Yes. Tell Linda when the service, the Kiddush and the reception are planned, and she'll time the setup and cleanup around them." },
+    { "q": "How early should we book?", "a": "As soon as the date and venue are set. Many families plan a year or more ahead, so it helps to reserve early." }
+  ]
+}
