@@ -266,8 +266,7 @@ const NuWavMedia = () => {
                   index === currentSlide ? 'opacity-100' : 'opacity-0'
                 }`}
                 style={{
-                  background: slide.background,
-                  backgroundImage: `${slide.pattern}, ${slide.overlay}`
+                  backgroundImage: `${slide.pattern}, ${slide.overlay}, ${slide.background}`
                 }}
               >
                 {/* Enhanced animated particles overlay */}
