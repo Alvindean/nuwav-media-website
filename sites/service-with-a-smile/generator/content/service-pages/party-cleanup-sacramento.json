@@ -1,0 +1,30 @@
+{
+  "service": "party-cleanup",
+  "city": "sacramento",
+  "status": "live",
+  "h1": "Party Setup & Cleanup in Sacramento, CA",
+  "metaDescription": "Party setup and cleanup in Sacramento, CA, for birthdays, graduations, anniversaries, reunions and holiday gatherings. Owner-led, 25+ years. Call (916) 866-2270.",
+  "sub": "You invite the guests. We set up before they arrive and clean up after they leave, so the host gets to enjoy the party too.",
+  "intro": [
+    "Most Sacramento parties happen at home or in a backyard, and the host usually ends up doing the work: tables in the morning, trash all afternoon and dishes until midnight. Party setup and cleanup takes that off your plate.",
+    "Linda works birthdays, graduations, anniversaries, family reunions, baby showers and holiday gatherings all over the city, from compact Oak Park bungalows to big backyards in Natomas and the Pocket."
+  ],
+  "included": [
+    "Setting up tables, chairs and a serving area",
+    "Keeping trash, recycling and dishes under control during the party (on request)",
+    "Breaking down tables, chairs and decorations",
+    "Kitchen cleanup: dishes, counters, stovetop",
+    "Leaving the yard and living areas clean",
+    "Bagging trash and recycling for pickup"
+  ],
+  "scenarios": [
+    { "h": "A summer backyard birthday", "p": "Sacramento summers are hot, so we set up early, keep food and trash areas tidy through the heat of the day, and reset everything once the party winds down." },
+    { "h": "A graduation open house", "p": "Guests coming and going all afternoon means constant clearing. We keep the serving table and trash stations in order from start to finish." },
+    { "h": "A family reunion or holiday gathering", "p": "Big guest lists and lots of cooking. We keep the kitchen usable during the event and restore the house afterward." }
+  ],
+  "faqs": [
+    { "q": "How much does party cleanup cost in Sacramento?", "a": "It depends on the size of the party, the space and whether you need setup, cleanup or both. Call (916) 866-2270 for a clear quote before you book." },
+    { "q": "Can you just do the cleanup after the party?", "a": "Yes. Some hosts only want the after-party cleanup, often the same night or the next morning. Tell Linda what works for you." },
+    { "q": "Do you work parties at rented clubhouses or halls?", "a": "Yes. Share the venue's cleaning checklist and exit time, and we'll work from it so you get your deposit back." }
+  ]
+}

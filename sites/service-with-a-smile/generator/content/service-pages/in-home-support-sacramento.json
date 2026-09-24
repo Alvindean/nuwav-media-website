@@ -1,0 +1,30 @@
+{
+  "service": "in-home-support",
+  "city": "sacramento",
+  "status": "live",
+  "h1": "In-Home Support in Sacramento, CA",
+  "metaDescription": "Friendly in-home support in Sacramento, CA: help keeping the home clean and manageable for seniors and busy families. Owner-led by Linda D. Ray. Call (916) 866-2270.",
+  "sub": "A dependable, familiar person to help keep the home in order, for older adults who want to stay independent and families who need an extra hand.",
+  "intro": [
+    "Many Sacramento families reach a point where a parent wants to stay in their own home but needs help keeping it up. Others are juggling work, kids or recovering from surgery and can't stay on top of the house. In-home support fills that gap.",
+    "Linda provides practical help around the home, not medical care. She keeps a steady routine, works at a respectful pace, and gets to know the household so each visit feels familiar rather than like a stranger showing up."
+  ],
+  "included": [
+    "Light housekeeping: kitchen, bathrooms, dusting and floors",
+    "Laundry, folding and changing bed linens",
+    "Tidying and organizing everyday living areas",
+    "Taking out trash and recycling",
+    "A regular schedule that suits the household",
+    "Keeping family members informed if they'd like"
+  ],
+  "scenarios": [
+    { "h": "Helping an older parent stay at home", "p": "Adult children often call on a parent's behalf. Linda keeps the home clean and comfortable and becomes a familiar, trusted face in the routine." },
+    { "h": "Support after a hospital stay or surgery", "p": "When someone is recovering and can't manage the housework for a while, short-term help keeps the home livable." },
+    { "h": "A regular hand for a busy family", "p": "Weekly or every-other-week visits so the house doesn't slide while everyone is working." }
+  ],
+  "faqs": [
+    { "q": "Is this medical or personal care?", "a": "No. In-home support here means practical help around the house: cleaning, laundry and keeping things tidy. It isn't medical or nursing care." },
+    { "q": "How much does in-home support cost in Sacramento?", "a": "It depends on how often you'd like visits and what the household needs. Call (916) 866-2270 to talk it through and get a clear price." },
+    { "q": "Can I arrange this for my parent?", "a": "Yes. Many families call on behalf of a parent. Linda will talk with you and, if you'd like, with your parent, to set up a routine that works for them." }
+  ]
+}
