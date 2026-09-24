@@ -1,0 +1,30 @@
+{
+  "service": "wedding-cleanup",
+  "city": "sacramento",
+  "status": "live",
+  "h1": "Wedding Setup & Cleanup in Sacramento, CA",
+  "metaDescription": "Wedding reception setup and cleanup in Sacramento, CA. Tables set, the room cleared and handed back to the venue on time. Owner-led, 25+ years. Call (916) 866-2270.",
+  "sub": "Your family should be dancing at the end of the night, not stacking chairs. Linda handles the setup and the final cleanup.",
+  "intro": [
+    "Sacramento weddings range from church-hall receptions to backyard celebrations to rented event rooms, and a lot of them come with a catch: the family is expected to set up and hand the space back clean by a set time.",
+    "Linda has spent more than 25 years doing exactly that work. She sets up before the ceremony, keeps things tidy during the reception if you'd like, and clears the room at the end so your deposit comes back."
+  ],
+  "included": [
+    "Setting tables, chairs and linens to your layout",
+    "Arranging the serving and gift tables",
+    "Clearing plates and trash during the reception (on request)",
+    "Full breakdown: tables, chairs, décor removal",
+    "Kitchen and serving-area cleanup",
+    "Working from your venue's cleaning checklist"
+  ],
+  "scenarios": [
+    { "h": "A parish-hall reception with a 10 p.m. exit", "p": "We start clearing as soon as the last dances begin, so the room is ready to hand back on time." },
+    { "h": "A backyard wedding", "p": "We turn the yard into a reception space in the morning and restore the yard and kitchen after the last guest leaves." },
+    { "h": "Setup only, with the venue handling cleanup", "p": "Some couples only need help getting the room ready. Just tell Linda what you need." }
+  ],
+  "faqs": [
+    { "q": "How much does wedding cleanup cost in Sacramento?", "a": "It depends on the guest count, the venue and the hours involved. Call (916) 866-2270 to talk through your day and get a clear quote before booking." },
+    { "q": "How early should we book for a wedding?", "a": "Spring and fall Saturdays fill first. Once your venue and date are set, give Linda a call." },
+    { "q": "Can you follow our venue's checklist?", "a": "Yes. Send it over ahead of time and we'll work from it on the night." }
+  ]
+}

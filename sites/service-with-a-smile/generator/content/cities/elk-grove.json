@@ -1,0 +1,89 @@
+{
+  "slug": "elk-grove",
+  "name": "Elk Grove",
+  "county": "Sacramento County",
+  "status": "draft",
+  "draftNote": "Confirm with Linda that she serves Elk Grove before setting status to live.",
+  "map": "Elk Grove, CA",
+  "metaDescription": "Party and event setup and cleanup in Elk Grove, CA, for birthdays, graduations, quinceañeras and weddings, plus housekeeping. Call (916) 866-2270.",
+  "sub": "Big family parties need more hands. Linda sets up before guests arrive and cleans up after, so Elk Grove hosts can enjoy their own celebration.",
+  "localContext": [
+    "Elk Grove, in southern Sacramento County, grew quickly after it became a city in 2000. Many of its neighborhoods are newer, with larger homes, bigger backyards and a lot of young families. That makes it a city of home-hosted celebrations: first birthdays, graduations, reunions and holiday gatherings with big guest lists.",
+    "It's about a 20-minute drive down Highway 99 from our home base in Oak Park."
+  ],
+  "localProblems": [
+    {
+      "h": "Large guest lists at home",
+      "p": "A backyard built for a family of five doesn't handle eighty guests on its own. Trash, recycling and dishes pile up fast. We keep things under control during the party so the cleanup afterward stays manageable."
+    },
+    {
+      "h": "HOA and neighborhood expectations",
+      "p": "Many Elk Grove neighborhoods have homeowners' associations with rules about noise, parking and when trash goes out. We make sure bins and bags are handled properly so there's nothing sitting on the curb that shouldn't be."
+    },
+    {
+      "h": "Hot, dry afternoons",
+      "p": "Summer parties in the south county can run well above 95°F. We set up early and keep food and trash areas tidy so the heat doesn't make the cleanup worse."
+    },
+    {
+      "h": "Long, spread-out events",
+      "p": "Elk Grove parties often run all afternoon with guests arriving in waves. A single cleanup at the end isn't enough; plates and cups need clearing through the day so the house stays usable."
+    }
+  ],
+  "scenarios": [
+    {
+      "h": "A first birthday with the whole family",
+      "p": "Tables, chairs and a serving area set before the grandparents arrive, then a full reset of the yard and kitchen once the cake is gone."
+    },
+    {
+      "h": "A graduation open house",
+      "p": "Guests coming and going all afternoon means constant clearing. We keep the food area and trash stations in shape from start to finish."
+    },
+    {
+      "h": "Deep cleaning after hosting the holidays",
+      "p": "After Thanksgiving or Christmas with a full house, we help get the home back to normal."
+    },
+    {
+      "h": "A quinceañera or wedding at a south-county hall",
+      "p": "For families booking a community or parish hall, we set up before the family arrives and hand the room back clean to the venue's checklist."
+    }
+  ],
+  "demand": "In Elk Grove, requests peak around graduation season in late May and June, summer weekends, and the winter holidays.",
+  "neighborhoods": [
+    "Laguna",
+    "East Franklin",
+    "Sheldon",
+    "Old Town Elk Grove",
+    "Stonelake",
+    "Lakeside"
+  ],
+  "faqs": [
+    {
+      "q": "How much does party cleanup cost in Elk Grove?",
+      "a": "It depends on the guest count, the size of the home or venue, and whether you need setup, cleanup or both. Call (916) 866-2270 and Linda will give you a clear quote before you book."
+    },
+    {
+      "q": "Do you travel to Elk Grove?",
+      "a": "Elk Grove is about 20 minutes from our base in Oak Park, Sacramento. Call to check your date."
+    },
+    {
+      "q": "Can you help during the party, not just after?",
+      "a": "Yes. Many hosts want someone keeping the trash, dishes and serving area in order while guests are there. Tell Linda what you need when you call."
+    },
+    {
+      "q": "Do you also serve Laguna and East Franklin?",
+      "a": "Those are part of Elk Grove, so yes, subject to your date. If you're just outside the city, call and ask."
+    },
+    {
+      "q": "Do you handle setup, cleanup or both?",
+      "a": "Either or both. Some Elk Grove hosts just want the yard and kitchen reset after the party; others want tables and serving areas ready before guests arrive. Tell Linda what would help most."
+    },
+    {
+      "q": "What if the party runs late?",
+      "a": "Talk it through when you book. Linda will plan the timing with you so there are no surprises about when the cleanup happens."
+    }
+  ],
+  "nearby": [
+    "sacramento",
+    "rancho-cordova"
+  ]
+}

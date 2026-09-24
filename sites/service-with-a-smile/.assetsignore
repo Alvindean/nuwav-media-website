@@ -1,4 +1,9 @@
 wrangler.jsonc
 README.md
 .assetsignore
+.gitignore
 .wrangler
+.wrangler/**
+generator
+generator/**
+.generated.json

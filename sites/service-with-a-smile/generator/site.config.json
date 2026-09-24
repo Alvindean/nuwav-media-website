@@ -1,0 +1,19 @@
+{
+  "BUSINESS_NAME": "Service With A Smile",
+  "OWNER": { "name": "Linda D. Ray", "title": "Owner & Consultant", "photo": "/linda-ray.jpg" },
+  "BUSINESS_TYPE": "Event cleanup, setup and housekeeping",
+  "PRIMARY_SERVICE": { "slug": "event-cleanup", "name": "Event Cleanup & Setup", "short": "event cleanup" },
+  "SECONDARY_SERVICES": ["housekeeping", "wedding-cleanup", "quinceanera-cleanup", "mitzvah-cleanup", "party-cleanup", "in-home-support"],
+  "STATE": { "slug": "california", "name": "California", "abbr": "CA" },
+  "HOME_CITY": "sacramento",
+  "COUNTY": "Sacramento County",
+  "SERVICE_RADIUS": "Sacramento and nearby communities (confirm exact radius with Linda)",
+  "ADDRESS": { "neighborhood": "Oak Park", "locality": "Sacramento", "region": "CA", "postalCode": "95817", "country": "US" },
+  "PRIMARY_PHONE": { "display": "(916) 866-2270", "tel": "+19168662270" },
+  "EMAIL": "Lray@att.net",
+  "PRIMARY_CTA": "Call",
+  "BRAND_TONE": "Friendly",
+  "LANGUAGE": "English",
+  "YEARS_EXPERIENCE": "25+",
+  "SITE_URL": "https://service-with-a-smile.thealvindean.workers.dev"
+}
