@@ -1,0 +1,29 @@
+/* Site header: shared by every page (homepage included). Markup is written by generator/build.mjs. */
+.site-header { position: sticky; top: 0; z-index: 40; background: rgba(253, 249, 255, .9); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid #eadff3; font-family: "Nunito", system-ui, sans-serif; line-height: 1.5; }
+.site-header .hdr { max-width: 1120px; margin: 0 auto; padding: 0 20px; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.site-header .hdr-logo { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: #2b1d3f; flex: none; }
+.site-header .hdr-logo svg { width: 38px; height: 38px; flex: none; }
+.site-header .hdr-name { font-family: "Lilita One", sans-serif; font-size: 1.25rem; letter-spacing: .02em; line-height: 1; white-space: nowrap; }
+.site-header .hdr-name span { display: block; font-family: "Nunito", sans-serif; font-weight: 700; font-size: .7rem; letter-spacing: .12em; color: #5a4c6e; text-transform: uppercase; margin-top: 3px; }
+.site-header .hdr-links { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; font-weight: 700; font-size: .95rem; }
+.site-header .hdr-links a { text-decoration: none; color: #5a4c6e; padding: 4px 0; border-bottom: 2px solid transparent; }
+.site-header .hdr-links a:hover { color: #b44fc8; }
+.site-header .hdr-links a[aria-current="page"] { color: #2b1d3f; border-bottom-color: #b44fc8; }
+.site-header .hdr-call { display: inline-flex; align-items: center; gap: .5rem; padding: .6rem 1.1rem; border-radius: 999px; background: #2b1d3f; color: #fff; font-weight: 800; font-size: .92rem; text-decoration: none; white-space: nowrap; box-shadow: 0 10px 24px -10px rgba(43, 29, 63, .7); }
+.site-header .hdr-call svg { width: 19px; height: 19px; flex: none; }
+.site-header a:focus-visible { outline: 3px solid #2b1d3f; outline-offset: 3px; }
+/* Phone / tablet menu */
+.site-header .hdr-menu { display: none; position: relative; }
+.site-header .hdr-menu summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: .5rem; padding: .55rem .9rem; border: 1.5px solid #eadff3; border-radius: 999px; background: #fff; font-weight: 800; font-size: .92rem; color: #2b1d3f; }
+.site-header .hdr-menu summary::-webkit-details-marker { display: none; }
+.site-header .hdr-menu summary span, .site-header .hdr-menu summary span::before, .site-header .hdr-menu summary span::after { display: block; width: 16px; height: 2px; background: #2b1d3f; border-radius: 2px; position: relative; }
+.site-header .hdr-menu summary span::before, .site-header .hdr-menu summary span::after { content: ""; position: absolute; left: 0; }
+.site-header .hdr-menu summary span::before { top: -5px; }
+.site-header .hdr-menu summary span::after { top: 5px; }
+.site-header .hdr-menu ul { list-style: none; margin: 0; padding: 8px; position: absolute; right: 0; top: calc(100% + 10px); min-width: 240px; background: #fff; border: 1px solid #eadff3; border-radius: 16px; box-shadow: 0 18px 50px -20px rgba(80, 30, 110, .45); }
+.site-header .hdr-menu li a { display: block; padding: .7rem .9rem; border-radius: 10px; text-decoration: none; color: #2b1d3f; font-weight: 700; }
+.site-header .hdr-menu li a:hover, .site-header .hdr-menu li a[aria-current="page"] { background: #f6effc; color: #b44fc8; }
+.site-header .hdr-menu .hdr-menu-call { background: #2b1d3f; color: #fff; text-align: center; margin-top: 4px; white-space: nowrap; }
+@media (max-width: 860px) { .site-header .hdr-links { display: none; } .site-header .hdr-menu { display: block; } }
+@media (max-width: 600px) { .site-header .hdr { padding: 0 16px; } .site-header .hdr-call { display: none; } }
+html { scroll-padding-top: 84px; }

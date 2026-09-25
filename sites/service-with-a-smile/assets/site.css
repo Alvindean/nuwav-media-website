@@ -26,15 +26,6 @@ p + p { margin-top: .9rem; }
 .btn-light { background: #fff; color: var(--ink); border-color: #fff; }
 .btn svg { width: 19px; height: 19px; flex: none; }
 
-/* Header (sticky desktop CTA) */
-.site-header { position: sticky; top: 0; z-index: 30; background: rgba(253,249,255,.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
-.site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 66px; gap: 1rem; }
-.brand { display: flex; align-items: center; gap: .55rem; text-decoration: none; color: var(--ink); font-family: "Lilita One", sans-serif; font-size: 1.2rem; }
-.brand svg { width: 36px; height: 36px; }
-.site-header nav { display: flex; gap: 1.4rem; font-weight: 700; font-size: .95rem; }
-.site-header nav a { color: var(--ink-soft); text-decoration: none; }
-.site-header nav a:hover { color: var(--orchid); }
-.site-header .btn { padding: .55rem 1rem; font-size: .92rem; }
 
 /* Breadcrumbs */
 .crumbs { font-size: .85rem; padding: 14px 0 0; }
@@ -111,9 +102,7 @@ footer ul { list-style: none; display: grid; gap: .3rem; }
 /* Sticky mobile CTA */
 .callbar { display: none; }
 @media (max-width: 760px) {
-  .site-header nav, .site-header .btn { display: none; }
-  .brand { white-space: nowrap; }
-  .hero .wrap { grid-template-columns: 1fr; }
+      .hero .wrap { grid-template-columns: 1fr; }
   .owner-card { width: 268px; }
   section.block { padding: 48px 0; }
   .wrap { padding: 0 16px; }

@@ -99,8 +99,27 @@ const faqNode = (faqs) => ({
   mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
 });
 
+// ---------- shared header (also written into the homepage) ----------
+const NAV = [
+  { key: 'services', label: 'Services', href: url.root() },
+  { key: 'areas', label: 'Service Areas', href: url.state() },
+  { key: 'about', label: 'About Linda', href: '/#about' },
+  { key: 'how', label: 'How It Works', href: '/#how' },
+  { key: 'contact', label: 'Contact', href: '/#contact' },
+];
+function headerHTML(active) {
+  return `<header class="site-header"><div class="hdr">
+  <a class="hdr-logo" href="/" aria-label="${esc(cfg.BUSINESS_NAME)} home">${logo}<span class="hdr-name">${esc(cfg.BUSINESS_NAME)}<span>${esc(cfg.ADDRESS.locality)}, ${esc(cfg.ADDRESS.region)}</span></span></a>
+  <nav aria-label="Main"><ul class="hdr-links">${NAV.map((n) => `<li><a href="${n.href}"${n.key === active ? ' aria-current="page"' : ''}>${esc(n.label)}</a></li>`).join('')}</ul></nav>
+  <a class="hdr-call" href="tel:${cfg.PRIMARY_PHONE.tel}">${phoneIcon}${esc(cfg.PRIMARY_PHONE.display)}</a>
+  <details class="hdr-menu"><summary aria-label="Open menu"><span aria-hidden="true"></span>Menu</summary>
+    <ul>${NAV.map((n) => `<li><a href="${n.href}"${n.key === active ? ' aria-current="page"' : ''}>${esc(n.label)}</a></li>`).join('')}<li><a class="hdr-menu-call" href="tel:${cfg.PRIMARY_PHONE.tel}">Call ${esc(cfg.PRIMARY_PHONE.display)}</a></li></ul>
+  </details>
+</div></header>`;
+}
+
 // ---------- page shell ----------
-function page({ urlPath, title, description, trail, hero, jump, body, schema, noindex }) {
+function page({ urlPath, title, description, trail, hero, jump, body, schema, noindex, activeNav }) {
   const crumbs = `<nav class="crumbs wrap" aria-label="Breadcrumb"><ol>${trail.map((t, i) => i === trail.length - 1
     ? `<li><span aria-current="page">${esc(t.name)}</span></li>`
     : `<li><a href="${t.url}">${esc(t.name)}</a></li>`).join('')}</ol></nav>`;
@@ -123,15 +142,12 @@ ${noindex ? '<meta name="robots" content="noindex, nofollow">\n' : ''}<meta prop
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Nunito:wght@400;700;800&family=Lilita+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/header.css">
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">${JSON.stringify(graph)}</script>
 </head>
 <body>
-<header class="site-header"><div class="wrap">
-  <a class="brand" href="/">${logo}${esc(cfg.BUSINESS_NAME)}</a>
-  <nav aria-label="Main"><a href="${url.root()}">Services</a><a href="${url.state()}">Service Areas</a><a href="/#about">About Linda</a></nav>
-  ${callBtn('btn-dark', cfg.PRIMARY_PHONE.display)}
-</div></header>
+${headerHTML(activeNav)}
 ${crumbs}
 <main>
 <section class="hero"><div class="wrap">
@@ -168,7 +184,7 @@ const stateCrumb = { name: ST.name, url: url.state() };
 {
   const s = services[P.slug];
   add({
-    urlPath: url.root(), kind: 'root',
+    urlPath: url.root(), kind: 'root', activeNav: 'services',
     title: `${s.title} | ${cfg.BUSINESS_NAME}`,
     description: s.metaDescription,
     trail: [home, rootCrumb],
@@ -193,7 +209,7 @@ const stateCrumb = { name: ST.name, url: url.state() };
 // 2. State hub
 {
   add({
-    urlPath: url.state(), kind: 'state',
+    urlPath: url.state(), kind: 'state', activeNav: 'areas',
     title: `${P.name} in ${ST.name} | ${cfg.BUSINESS_NAME}`,
     description: ST.metaDescription,
     trail: [home, rootCrumb, stateCrumb],
@@ -215,7 +231,7 @@ for (const c of cities) {
   const nearby = (c.nearby || []).map((s) => cityBySlug[s]).filter((n) => n && isPublished(n));
   const localServices = servicePages.filter((sp) => sp.city === c.slug);
   add({
-    urlPath: url.city(c), kind: 'city', city: c,
+    urlPath: url.city(c), kind: 'city', city: c, activeNav: 'areas',
     title: `${P.name} in ${c.name}, ${ST.abbr} | ${cfg.BUSINESS_NAME}`,
     description: c.metaDescription,
     trail: [home, rootCrumb, stateCrumb, { name: c.name, url: url.city(c) }],
@@ -239,7 +255,7 @@ for (const sp of servicePages) {
   const c = cityBySlug[sp.city];
   const svc = services[sp.service];
   add({
-    urlPath: url.servicePage(sp), kind: 'service', city: c,
+    urlPath: url.servicePage(sp), kind: 'service', city: c, activeNav: 'services',
     title: `${sp.h1.replace(`, ${ST.abbr}`, '')} | ${cfg.BUSINESS_NAME}`,
     description: sp.metaDescription,
     trail: [home, rootCrumb, stateCrumb, { name: c.name, url: url.city(c) }, { name: svc.name, url: url.servicePage(sp) }],
@@ -315,6 +331,17 @@ fs.writeFileSync(manifestPath, JSON.stringify(written, null, 2) + '\n');
 // clean up empty dirs left from removed pages
 const prune = (d) => { if (!fs.existsSync(d) || !fs.statSync(d).isDirectory()) return; for (const e of fs.readdirSync(d)) prune(path.join(d, e)); if (d !== OUT && fs.readdirSync(d).length === 0) fs.rmdirSync(d); };
 for (const d of oldTopDirs) prune(path.join(OUT, d));
+
+
+// Keep the homepage header identical to every other page.
+{
+  const homePath = path.join(SITE, 'index.html');
+  const home = fs.readFileSync(homePath, 'utf8');
+  const START = '<!-- site-header:start -->', END = '<!-- site-header:end -->';
+  if (!home.includes(START) || !home.includes(END)) { console.error('index.html is missing the site-header markers'); process.exit(1); }
+  const next = home.slice(0, home.indexOf(START) + START.length) + '\n  ' + headerHTML(null) + '\n  ' + home.slice(home.indexOf(END));
+  if (!PREVIEW && next !== home) fs.writeFileSync(homePath, next);
+}
 
 const drafts = allCities.filter((c) => c.status !== 'live');
 console.log(`Built ${pages.length} pages${PREVIEW ? ' (preview, drafts included, noindex)' : ''} into ${path.relative(process.cwd(), OUT) || '.'}`);
