@@ -141,16 +141,16 @@
       background: #fff; color: var(--orchid); border-radius: 999px; padding: .1rem .6rem;
       font-family: "Lilita One", sans-serif; font-weight: 400; font-size: 1.05rem;
     }
-    .portrait-frame { position: relative; justify-self: center; width: min(100%, 360px); }
+    /* Photo is 288px wide (240px on phones) on every page; frame = photo + 2×6px border */
+    .portrait-frame { position: relative; justify-self: center; width: 300px; max-width: 100%; }
     .portrait {
       border-radius: 28px; overflow: hidden;
       border: 6px solid rgba(255,255,255,.9);
       box-shadow: 0 30px 60px -20px rgba(40, 10, 70, .55);
       transform: rotate(2deg);
-      aspect-ratio: 246 / 348;
       background: #6b5a4a;
     }
-    .portrait img { width: 100%; height: 100%; object-fit: cover; }
+    .portrait img { width: 100%; height: auto; aspect-ratio: 492 / 696; object-fit: cover; }
     .name-tag {
       position: absolute; left: -24px; bottom: 26px;
       background: #fff; color: var(--ink); border-radius: 16px;
@@ -283,7 +283,7 @@
       .hero p.lead { margin-left: auto; margin-right: auto; }
       .hero-cta { justify-content: center; }
       .arc { margin-left: auto; margin-right: auto; }
-      .portrait-frame { width: min(78%, 300px); }
+      .portrait-frame { width: 252px; }
       .name-tag { left: 50%; transform: translateX(-50%) rotate(-2deg); bottom: -22px; white-space: nowrap; }
       .steps { grid-template-columns: 1fr; gap: 28px; }
     }

@@ -46,15 +46,16 @@ p + p { margin-top: .9rem; }
 /* Hero */
 .hero { background: var(--grad); color: #fff; margin-top: 14px; padding: 48px 0 56px; position: relative; overflow: hidden; }
 .hero::after { content: ""; position: absolute; width: 380px; height: 380px; border-radius: 50%; background: rgba(255,255,255,.12); top: -140px; right: -110px; }
-.hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1.4fr .6fr; gap: 40px; align-items: center; }
+.hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
 .hero h1 { font-size: clamp(2rem, 4.4vw, 3rem); margin-bottom: .8rem; text-shadow: 0 2px 16px rgba(60,20,90,.25); }
 .hero .sub { font-size: 1.13rem; max-width: 36rem; margin-bottom: 1.4rem; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
 .hero-cta small { opacity: .92; font-weight: 700; }
 .badges { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.3rem; list-style: none; }
 .badges li { background: rgba(255,255,255,.2); border: 1px solid rgba(255,255,255,.45); border-radius: 999px; padding: .3rem .85rem; font-weight: 700; font-size: .88rem; }
-.owner-card { background: #fff; color: var(--ink); border-radius: 22px; padding: 14px; box-shadow: 0 30px 60px -25px rgba(40,10,70,.55); text-align: center; }
-.owner-card img { border-radius: 14px; aspect-ratio: 492/696; object-fit: cover; width: 100%; }
+/* Photo is 288px wide (240px on phones) on every page; card = photo + 2×14px padding */
+.owner-card { width: 316px; justify-self: center; background: #fff; color: var(--ink); border-radius: 22px; padding: 14px; box-shadow: 0 30px 60px -25px rgba(40,10,70,.55); text-align: center; }
+.owner-card img { border-radius: 14px; aspect-ratio: 492/696; object-fit: cover; width: 100%; height: auto; }
 .owner-card strong { display: block; font-family: "Fraunces", serif; margin-top: .55rem; }
 .owner-card span { font-size: .85rem; color: var(--ink-soft); font-weight: 700; }
 
@@ -113,7 +114,7 @@ footer ul { list-style: none; display: grid; gap: .3rem; }
   .site-header nav, .site-header .btn { display: none; }
   .brand { white-space: nowrap; }
   .hero .wrap { grid-template-columns: 1fr; }
-  .owner-card { max-width: 220px; justify-self: center; }
+  .owner-card { width: 268px; }
   section.block { padding: 48px 0; }
   .wrap { padding: 0 16px; }
   .callbar { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(255,255,255,.97); border-top: 1px solid var(--line); box-shadow: 0 -8px 24px -12px rgba(43,29,63,.35); }
