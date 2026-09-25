@@ -32,3 +32,5 @@ URLs: `/event-cleanup/`, `/event-cleanup/california/`, `/event-cleanup/californi
 **Adding a city:** copy a city file, write real local content, set `"status": "live"`, and run the build. The build refuses to publish thin pages (below a minimum word count), pages missing FAQs, bad title or description lengths, and city pages that overlap more than 25% with another city page. It also rewrites `sitemap.xml` and `robots.txt`, and adds LocalBusiness, Service, BreadcrumbList and FAQPage schema to every page.
 
 Commit the generated pages after building. Cloudflare serves this folder as-is.
+
+**Header:** every page, the homepage included, uses the one header that `generator/build.mjs` writes (`headerHTML`). The builder writes it into `index.html` between the `<!-- site-header:start -->` and `<!-- site-header:end -->` markers, and it's styled by `assets/header.css`. Edit the `NAV` list in the generator to change the menu on every page.
